@@ -226,8 +226,9 @@ async function renderCanvas(){
   const GE="'GE SS Two','Tajawal',sans-serif";
   const topY=H*0.50,botY=H*0.962,totalH=botY-topY;
   const items=[];
-  items.push({v:'الحمد لله الذي يسر البدايات',size:20,color:'rgba(255,255,255,.85)',weight:'600'});
-  items.push({v:'وأكمل النهايات وبلغنا الغايات',size:20,color:'rgba(255,255,255,.85)',weight:'600'});
+  const isLast=S.fromGrade==='الثالث الثانوي';
+  items.push({v:isLast?'الحمد لله الذي يسر البدايات':'بسم الله الرحمن الرحيم',size:19,color:'rgba(255,255,255,.82)',weight:isLast?'600':'400'});
+  items.push({v:isLast?'وأكمل النهايات وبلغنا الغايات':'مبروك النجاح والتفوق',size:isLast?20:22,color:'rgba(255,255,255,.88)',weight:'700'});
   items.push({t:'line',color:PC+'88'});
    items.push({v:'تم بفضل الله وتوفيقه الانتقال من',size:18,color:'rgba(255,255,255,.72)'});
    items.push({v:'الصف '+S.fromGrade,size:26,color:SC,weight:'700'});
