@@ -229,11 +229,11 @@ async function renderCanvas(){
   items.push({v:'الحمد لله الذي يسر البدايات',size:20,color:'rgba(255,255,255,.85)',weight:'600'});
   items.push({v:'وأكمل النهايات وبلغنا الغايات',size:20,color:'rgba(255,255,255,.85)',weight:'600'});
   items.push({t:'line',color:PC+'88'});
-  items.push({v:'تم بفضل الله وتوفيقه الانتقال من',size:18,color:'rgba(255,255,255,.72)'});
-  items.push({v:'الصف '+S.fromGrade,size:26,color:SC,weight:'700'});
-  items.push({v:'إلى الصف',size:18,color:'rgba(255,255,255,.72)'});
-  items.push({v:S.toGrade,size:26,color:SC,weight:'700'});
-  if(S.school)items.push({v:'في مدرسة '+S.school,size:19,color:'rgba(255,255,255,.7)'});
+   items.push({v:'تم بفضل الله وتوفيقه الانتقال من',size:18,color:'rgba(255,255,255,.72)'});
+   items.push({v:'الصف '+S.fromGrade,size:26,color:SC,weight:'700'});
+   if(S.school)items.push({v:'في مدرسة '+S.school,size:18,color:'rgba(255,255,255,.7)'});
+   items.push({v:'إلى',size:18,color:'rgba(255,255,255,.72)'});
+   items.push({v:S.toGrade,size:26,color:SC,weight:'700'});
   items.push({t:'line',color:PC+'88'});
   items.push({v:S.firstName,size:58,color:'#ffffff',weight:'700'});
   if(S.lastName)items.push({t:'gap'});
